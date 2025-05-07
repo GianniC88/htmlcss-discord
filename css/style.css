@@ -63,7 +63,7 @@ a {
 }
 
 section {
-  height: 600px;
+  height: auto;
   padding: 60px 0;
 }
 
@@ -71,12 +71,22 @@ section {
   background-color: #d9d9d9;
   margin: 0;
 }
+
+.bg-grey-xxl {
+  height: auto;
+}
 /* end utilies */
 /* container navbar */
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.container-star {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* navbar */
@@ -148,15 +158,18 @@ section {
 .jumbo-bot-left {
   font-size: 1rem;
   background-color: white;
-  border-radius: 10px;
-  padding: 5px 15px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 25px;
+  font-weight: bold;
 }
 .jumbo-bot-right {
   color: white;
   font-size: 1rem;
   background-color: black;
-  border-radius: 10px;
-  padding: 5px 10px;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-weight: bold;
 }
 
 .jumbo-bottom {
@@ -183,6 +196,12 @@ h1 {
 h3 {
   flex-basis: 60%;
   max-width: 300px;
+  padding-top: 15px;
+  line-height: 30px;
+}
+
+h2 {
+  padding-bottom: 20px;
 }
 p {
   color: white;
@@ -211,7 +230,15 @@ p {
 
 .m-box {
   flex-basis: 100%;
-  background-color: #228b22;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download-btn {
+  border-radius: 20%;
+  background-color: white;
+  height: 20px;
+  width: auto;
 }
 
 /* footer */
@@ -258,4 +285,12 @@ footer {
 .footer-bottom > * {
   padding: 5px 10px;
   background-color: aliceblue;
+}
+
+.badge-purple {
+  color: white;
+  background-color: #8ea1e1;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
