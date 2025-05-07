@@ -1,4 +1,4 @@
-/* reset css */
+/* reset-css */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* section chat */
+
 /* utilies */
+
+.bg-white {
+  background-color: white;
+}
 header {
   background-color: #3161e0;
 }
@@ -20,10 +26,6 @@ ul {
 li {
   list-style-type: none;
   display: flex;
-}
-
-.bg-white {
-  background-color: white;
 }
 
 .bg-gray {
@@ -46,6 +48,7 @@ section {
   height: 600px;
   padding: 60px 0;
 }
+/* end utilies */
 /* container navbar */
 
 .container {
@@ -62,7 +65,7 @@ section {
   align-items: center;
 }
 
-<h2 > </h2 > .navbar > * {
+.navbar > * {
   flex-basis: 20%;
   padding: 10px 10px;
 }
@@ -142,14 +145,20 @@ section {
 li > * {
   color: white;
 }
-
+.h1-set {
+  color: black;
+  font-size: 35px;
+  max-width: 300px;
+}
 h1 {
-  font-size: 42px;
+  font-size: 46px;
   color: white;
   text-align: start;
-  padding: 0px 10px;
 }
-
+h3 {
+  flex-basis: 60%;
+  max-width: 300px;
+}
 p {
   color: white;
   font-size: 16px;
@@ -158,14 +167,17 @@ p {
 
 /* main content section*/
 
-.lg-box {
+.lg-box-chat {
   flex-basis: 60%;
-  background-color: #1e90ff;
+  background-image: url(../img/item1.svg);
 }
 
-.sl-box {
+.sl-box-chat {
+  padding: 40px;
   flex-basis: 40%;
-  background-color: #ffc0cb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .m-box {
